@@ -6,8 +6,9 @@ import { Button } from '@/components/ui/button';
 import { Leaf, Users, Award, Truck, Heart, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { companyConfig } from '@/config/company';
-
+import BookVisit from '@/components/BookVisit';
 const Index = () => {
+
   const stats = [
     { icon: Users, label: 'Happy Customers', value: '2000+' },
     { icon: Leaf, label: 'Organic Products', value: '100+' },
@@ -113,17 +114,23 @@ const Index = () => {
             See where your food comes from and connect with nature.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="secondary" size="lg" className="hover-lift">
-              <MapPin className="h-5 w-5 mr-2" />
-              Get Directions
+            {/* External maps link (opens in new tab) */}
+            <Button asChild variant="secondary" size="lg" className="hover-lift">
+              <a
+                href="https://maps.app.goo.gl/ve6KBL725LeuG3wTA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <MapPin className="h-5 w-5 mr-2" />
+                Get Directions
+              </a>
             </Button>
-            <Button variant="outline" size="lg" className="bg-white/10 border-white/30 text-primary-foreground hover:bg-white/20 hover-lift">
-              Book a Farm Tour
-            </Button>
+
+            <BookVisit />
+                </div>
+              </div>
+            </section>
           </div>
-        </div>
-      </section>
-    </div>
   );
 };
 

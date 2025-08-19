@@ -13,7 +13,7 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <img 
-                src="/lovable-uploads/0b47521a-482c-441a-921a-09307268dfaa.png" 
+                src="/logo.png" 
                 alt={`${companyConfig.shortName} Logo`}
                 className="h-8 w-8"
               />

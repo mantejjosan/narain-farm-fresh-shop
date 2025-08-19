@@ -13,8 +13,8 @@ export function Header() {
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Products', href: '/products' },
-    { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'About Us', href: '/about-us' },
+    { name: 'Contact Us', href: '/contact-us' },
   ];
 
   return (
@@ -22,11 +22,11 @@ export function Header() {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 hover-lift">
+          <Link to="/" className="flex items-center space-x-3 px-3 py-1 hover-lift">
             <img 
-              src="/lovable-uploads/0b47521a-482c-441a-921a-09307268dfaa.png" 
+              src="/logo.png" 
               alt={`${companyConfig.shortName} Logo`}
-              className="h-10 w-10"
+              className="h-14 w-14"
             />
             <div className="flex flex-col">
               <span className="font-heading font-bold text-lg text-primary">

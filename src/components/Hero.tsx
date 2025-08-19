@@ -1,9 +1,10 @@
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
-import { Leaf, Heart, Users, Truck } from 'lucide-react';
+import { Leaf, Heart, Users, Truck, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { companyConfig } from '@/config/company';
 import farmHero from '@/assets/farm-hero.jpg';
+import BookVisit from './BookVisit';
 
 export function Hero() {
   const features = [
@@ -67,8 +68,16 @@ export function Hero() {
                 Shop Fresh Produce
               </Button>
             </Link>
-            <Button variant="outline" size="xl" className="text-lg px-8 bg-white/10 border-white/30 text-white hover:bg-white/20">
-              Visit Our Farm
+            <Button variant="outline" size="xl" className="flex text-lg px-8 bg-white/10 border-white/30 text-white hover:bg-white/20">
+            <a
+                href="https://maps.app.goo.gl/ve6KBL725LeuG3wTA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className='flex items-center'
+              >
+                <MapPin className="h-5 w-5 mr-2" />
+                Visit Us
+              </a>
             </Button>
           </div>
 
