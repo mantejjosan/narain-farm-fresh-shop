@@ -19,7 +19,8 @@ export const companyConfig = {
   social: {
     facebook: "https://facebook.com/narainfarms",
     instagram: "https://instagram.com/narainfarms",
-    twitter: "https://twitter.com/narainfarms"
+    twitter: "https://twitter.com/narainfarms",
+    whatsapp: ""
   },
   
   philosophy: {

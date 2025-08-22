@@ -15,6 +15,8 @@ import Products from "./pages/Products";
 import NotFound from "./pages/NotFound";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
+import Blog from "./pages/Blog";
+import WhatsappTrigger from "./components/WhatsappTrigger";
 
 const queryClient = new QueryClient();
 
@@ -35,9 +37,11 @@ const App = () => (
                   <Route path="/products" element={<Products />} />
                   <Route path="/about-us" element={<AboutUs />} />
                   <Route path="/contact-us" element={<ContactUs />} />
+                  <Route path="/blog" element={<Blog />} />
                   {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                   <Route path="*" element={<NotFound />} />
                 </Routes>
+              <WhatsappTrigger /> 
               </main>
               <Footer />
               <Cart />
